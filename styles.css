@@ -1,0 +1,93 @@
+/*styles below*/
+
+/*styling the body area*/
+body {
+    background-color: black;
+}
+/*styling the header area*/
+header > h1 {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
+
+/*styling main*/
+main {
+    margin-top: 150px;
+}
+
+/*styling the insert button*/
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.insert-btn {
+    background-color: white;
+    font-size: 1.8em;
+    color: black;
+    padding: 30px;
+    cursor: pointer;
+    border-radius: 28px;
+}
+
+/*styling the card container*/
+.card-container {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    gap: 20px;
+}
+
+/*styling the cards*/
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none;
+}
+
+/*styling form*/
+#formContainer {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    display: none;
+}
+
+.inside-form {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn {
+    color: white;
+    background-color: black;
+    padding: 30px;
+    cursor: pointer;
+    border-radius: 24px;
+}
+
+.inputs {
+    border: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    width: 100px;
+}
+
+#myForm label, #myForm input, #myForm button {
+    margin-bottom: 10px;
+}
