@@ -38,6 +38,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 450px);
     gap: 20px;
+    justify-content: center;
 }
 
 /*styling the cards*/
@@ -47,7 +48,6 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    display: none;
 }
 
 /*styling form*/
