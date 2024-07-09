@@ -38,6 +38,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 450px);
     gap: 20px;
+    justify-content: center;
 }
 
 /*styling the cards*/
