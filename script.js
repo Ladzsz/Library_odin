@@ -72,7 +72,20 @@ function addbooktolibrary(library) {
         btnDiv.appendChild(removeBTN);
 
         container.appendChild(card);
+
+        HASREAD(readBTN);
     });
 }
 
+//function to mark book as read
+
+HASREAD = function(readBTN) {
+    readBTN.addEventListener('click', function() {
+        if (getComputedStyle(readBTN).backgroundColor === 'rgb(255, 255, 255)') {
+            readBTN.style.backgroundColor = `green`;
+        } else {
+            readBTN.style.backgroundColor = `white`;
+        }
+    });
+}
 
