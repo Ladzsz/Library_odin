@@ -38,6 +38,8 @@ window.onload = function() {
         container.innerHTML = '';
 
         library.forEach((book, index) => {
+            //creating the cards
+            
             const card = document.createElement('div');
             card.className = 'card';
 
@@ -56,6 +58,8 @@ window.onload = function() {
             const btnDiv = document.createElement('div');
             btnDiv.className = 'btn-div';
             card.appendChild(btnDiv);
+
+            //creating the buttons
 
             const readBTN = document.createElement('button');
             readBTN.className = `readBTN`;
