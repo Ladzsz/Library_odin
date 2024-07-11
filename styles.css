@@ -48,7 +48,35 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    border-left: solid 4px orange;
 }
+
+.btn-div {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.readBTN {
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-size: 1.1em;
+    border-radius: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.removeBTN {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 
 /*styling form*/
 #formContainer {
