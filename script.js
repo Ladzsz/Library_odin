@@ -57,6 +57,20 @@ function addbooktolibrary(library) {
         pages.textContent = `Pages: ${book.page}`;
         card.appendChild(pages);
 
+        const btnDiv = document.createElement('div');
+        btnDiv.className = 'btn-div';
+        card.appendChild(btnDiv);
+
+        const readBTN = document.createElement('button');
+        readBTN.className = `readBTN`;
+        readBTN.textContent = `Read`;
+        btnDiv.appendChild(readBTN);
+
+        const removeBTN = document.createElement('button');
+        removeBTN.className = `removeBTN`;
+        removeBTN.textContent = `Remove`;
+        btnDiv.appendChild(removeBTN);
+
         container.appendChild(card);
     });
 }
