@@ -24,13 +24,17 @@ window.onload = function() {
     // Array to hold the books
     const library = [];
 
-    // Constructor to make books
-    function Book(bookname, author, page) {
-        this.bookname = bookname;
-        this.author = author;
-        this.page = page;
-        this.read = false;
+    // Class to make books
+    class Book {
+
+        constructor (bookname, author, page) {
+            this.bookname = bookname;
+            this.author = author;
+            this.page = page;
+            this.read = false;
+        }
     }
+    
 
     // Function to add books to library
     function addbooktolibrary(library) {
@@ -71,12 +75,14 @@ window.onload = function() {
             removeBTN.textContent = `Remove`;
             btnDiv.appendChild(removeBTN);
 
+            //making sure button is green or white
             if (book.read) {
                 readBTN.style.backgroundColor = 'green';
             } else {
                 readBTN.style.backgroundColor = 'white';
             }
 
+            //event listener to change button from green to white
             readBTN.addEventListener('click', function() {
                 book.read = !book.read;
                 if (book.read) {
@@ -86,6 +92,7 @@ window.onload = function() {
                 }
             });
 
+            //event listener to remove book
             removeBTN.addEventListener('click', function() {
                 library.splice(index, 1);
                 addbooktolibrary(library);
